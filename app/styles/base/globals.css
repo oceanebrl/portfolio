@@ -1,11 +1,11 @@
 /* Reset */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   scroll-behavior: smooth;
 }
 
 /* Height & Sections */
@@ -13,51 +13,63 @@
 html,
 body,
 main {
-  height: 100%;
-  width: 100%;
+   height: 100%;
+   width: 100%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: var(--font-coming-soon);
+   font-family: Arial, Helvetica, sans-serif;
+   font-family: var(--font-coming-soon);
 }
 
 main {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+   scroll-snap-type: y mandatory;
 }
 
 section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  scroll-snap-align: start;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   scroll-snap-align: start;
 }
 
 /* Headings */
 
 h1,
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: var(--font-licorice);
+   font-family: Arial, Helvetica, sans-serif;
+   font-family: var(--font-licorice);
+}
+
+h1 {
+   text-align: center;
+   font-weight: 500;
+   font-size: 3rem;
 }
 
 h2 {
-  font-size: 3.5rem;
-  border-bottom: 2px solid #542869;
-  font-weight: 500;
-  color: #542869;
-  margin-bottom: 2rem;
+   font-size: 3.5rem;
+   border-bottom: 2px solid #542869;
+   font-weight: 500;
+   color: #542869;
+   margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: transparent;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(45deg, #542869, #f2afc1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin: 1rem;
+   font-size: 2rem;
+   font-weight: 700;
+   color: transparent;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+   background: linear-gradient(45deg, #542869, #f2afc1);
+   background-clip: text;
+   -webkit-background-clip: text;
+   margin: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+   h1 {
+      font-size: 2.5rem;
+   }
 }

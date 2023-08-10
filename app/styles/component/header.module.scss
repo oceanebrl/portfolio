@@ -1,0 +1,93 @@
+@import "../utils/variables.scss";
+
+/* Fixed Header */
+.header {
+   background-color: $color-primary-dark;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   box-shadow: 0 2px 4px rgb($color-primary-dark, 50%);
+   z-index: 10;
+   padding: 0 2rem;
+}
+
+/* Wrap to styled the Header */
+.wrap {
+   max-width: $width-max;
+   padding: $padding-general;
+   margin: auto;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* Media Queries */
+   @media screen and (max-width: 850px) {
+      flex-direction: column;
+   }
+   @media screen and (max-width: $width-mq-mobile) {
+      flex-direction: row;
+   }
+}
+
+/* Main Navigation */
+.nav {
+   display: flex;
+   gap: 3rem;
+   &__item {
+      color: #fff;
+      position: relative;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease-in;
+      &:hover {
+         color: $color-accent; // to modify later
+      }
+   }
+   /* Media Queries */
+   @media screen and (max-width: 620px) {
+      gap: 1rem;
+      &__item {
+         font-size: 0.8rem;
+      }
+   }
+   @media screen and (max-width: $width-mq-mobile) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $color-primary-dark;
+      padding: 1rem;
+      border-radius: 1rem;
+      flex-direction: column;
+      gap: $padding-general;
+      &__item {
+         display: none;
+         &__open {
+            display: inline;
+         }
+      }
+   }
+}
+
+/* Icon Burger Menu */
+.burger {
+   position: relative;
+   display: none;
+   width: 1.5rem;
+   height: 1.5rem;
+   align-self: flex-end;
+   &__line {
+      position: absolute;
+      width: 100%;
+      height: 0.2rem;
+      background-color: #fff;
+      &__2 {
+         top: 0.6rem;
+      }
+      &__3 {
+         bottom: 0;
+      }
+   }
+   /* Media Queries */
+   @media screen and (max-width: $width-mq-mobile) {
+      display: block;
+   }
+}

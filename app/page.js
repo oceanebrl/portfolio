@@ -7,9 +7,9 @@
 import About from "./sections/About";
 
 export default function Home() {
-  return (
-    <main>
-      <About />
-    </main>
-  );
+   return (
+      <main>
+         <About />
+      </main>
+   );
 }
