@@ -1,13 +1,20 @@
-/* Next */
+/* Next & React */
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 
 /* Styles */
 import styleSection from "../styles/sections/sections.module.scss";
 
-/* Illustrations */
-import balloonStar from "@/public/balloon_star.png";
+/* Icons */
+import { ImHtmlFive2, ImCss3 } from "react-icons/Im";
+import { SiSass, SiReact } from "react-icons/si";
+import { BiLogoJavascript, BiLogoGithub, BiLogoNodejs } from "react-icons/Bi";
 
-function About() {
+/* Illustrations */
+import onTheMoon from "@/public/on_the_moon.png";
+
+function Skills() {
   return (
     <section className={styleSection.section}>
       <div className={styleSection.wrap}>
@@ -15,7 +22,7 @@ function About() {
         <div className={styleSection.content}>
           <div className={styleSection.illustration}>
             <Image
-              src={balloonStar}
+              src={onTheMoon}
               alt="Illustration d'un astraunaute qui vole grâce à un ballon en forme d'étoile"
               className={styleSection.illustration__img}
             />
@@ -54,4 +61,4 @@ function About() {
   );
 }
 
-export default About;
+export default Skills;

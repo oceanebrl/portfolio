@@ -1,29 +1,52 @@
 @import "../utils/variables.scss";
 
+/* Section Wrap */
 .section {
-  width: $width-max;
+  max-width: $width-max;
   margin: auto;
-  padding: 0 $padding-general 1rem $padding-general;
+  padding: 0 $padding-page 1rem $padding-page;
+  /* Media Quieries */
+  @media screen and (max-width: $width-mq-mobile) {
+    padding: 0 $padding-page-mobile 0.5rem $padding-page-mobile;
+  }
 }
 
+/* White Space so the Header doesn't hide the content */
 .headerSpace {
   height: 4.75rem;
+  /* Media Quieres */
+  @media screen and (max-width: 850px) {
+    height: 7.25rem;
+  }
+  @media screen and (max-width: $width-mq-mobile) {
+    height: 4.125rem;
+  }
 }
 
+/* General Wrap with the title */
 .wrap {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
+/* General Wrap without the title */
 .content {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  /* Media Quieries */
+  @media screen and (max-width: 700px) {
+    gap: 1rem;
+  }
+  @media screen and (max-width: $width-mq-mobile) {
+    flex-direction: column;
+  }
 }
 
+/* Illustration */
 .illustration {
   width: 20%;
   height: auto;
@@ -32,8 +55,17 @@
     width: 100%;
     height: auto;
   }
+  /* Media Quieries */
+  @media screen and (max-width: 700px) {
+    width: 30%;
+  }
+  @media screen and (max-width: $width-mq-mobile) {
+    width: 6rem;
+    margin: 1rem;
+  }
 }
 
+/* Text */
 .text {
   font-size: 1.1rem;
   text-align: justify;
@@ -44,6 +76,7 @@
   &__prelude {
     font-size: 2rem;
     text-align: center;
+    /* Media Quieries */
   }
   &__highlight,
   &__link {
@@ -65,6 +98,17 @@
     }
     &:hover::after {
       width: 100%;
+    }
+  }
+  /* Media Quieries */
+  @media screen and (max-width: 700px) {
+    width: 60%;
+  }
+  @media screen and (max-width: $width-mq-mobile) {
+    font-size: 0.9rem;
+    width: 100%;
+    &__prelude {
+      font-size: 1.5rem;
     }
   }
 }
