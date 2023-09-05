@@ -24,6 +24,7 @@
   @media screen and (max-width: 850px) {
     flex-direction: column;
   }
+
   /* Mobile Devices */
   @media screen and (max-width: $width-mq-mobile) {
     flex-direction: row;

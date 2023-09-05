@@ -9,7 +9,12 @@
 
 /* Height & Sections */
 html,
+<<<<<<< HEAD
 body {
+=======
+body,
+main {
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
   height: 100%;
   width: 100%;
 }
@@ -17,6 +22,7 @@ body {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-family: var(--font-coming-soon);
+<<<<<<< HEAD
   display: flex;
 }
 
@@ -29,6 +35,16 @@ main {
 
 section {
   height: 100%;
+=======
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -53,7 +69,11 @@ h2 {
   border-bottom: 2px solid #542869;
   font-weight: 500;
   color: #542869;
+<<<<<<< HEAD
   margin: 2rem 0;
+=======
+  margin-bottom: 2rem;
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
 }
 
 h3 {
@@ -68,23 +88,29 @@ h3 {
 }
 
 /* Media Queries */
+<<<<<<< HEAD
 @media screen and (max-width: 850px) {
   /* Height & Sections */
   main {
     margin-top: 7.25rem;
   }
 }
+=======
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
 @media screen and (max-width: 480px) {
   /* Height & Sections */
   section {
     height: auto;
   }
 
+<<<<<<< HEAD
   main {
     margin-top: 4.125rem;
     scroll-snap-type: none;
   }
 
+=======
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
   /* Headings */
   h1 {
     font-size: 2.5rem;
@@ -93,7 +119,11 @@ h3 {
   h2 {
     font-size: 2rem;
     border-bottom-width: 1px;
+<<<<<<< HEAD
     margin: 1.5rem 0;
+=======
+    margin-bottom: 1.5rem;
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
   }
 }
 
@@ -101,6 +131,7 @@ h3 {
   h1 {
     font-size: 1.5rem;
   }
+<<<<<<< HEAD
 }
 
 /* Scrollbar custom */
@@ -116,4 +147,6 @@ main::-webkit-scrollbar-track {
 main::-webkit-scrollbar-thumb {
   background: #c58ee0;
   border-radius: 10px;
+=======
+>>>>>>> 99b5c3eee3d0e1cbe523c2dd7f1a150c2387a822
 }
